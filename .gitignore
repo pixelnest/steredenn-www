@@ -1,0 +1,28 @@
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+# Crap
+.DS_Store
+
+############
+## Jekyll
+############
+
+_site
+
+############
+## Sass
+############
+
+.sass-cache/
