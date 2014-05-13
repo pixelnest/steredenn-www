@@ -19,6 +19,7 @@
 
   blockquote {
     margin-bottom: 40px;
+    font-family: $font-quote;
     font-size: 1.4rem;
     font-style: italic;
 
@@ -26,10 +27,5 @@
       margin-top: -15px;
       text-align: right;
     }
-  }
-
-  > p {
-    font-size: 1rem;
-    font-family: Verdana, sans-serif;
   }
 }
