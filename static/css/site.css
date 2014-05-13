@@ -180,6 +180,22 @@ h1, h2, h3, h4, h5, h6 {
   .footer__contact .soon sup {
     font-size: 0.6rem; }
 
+.block {
+  margin: 0 auto;
+  padding: 30px;
+  width: 600px;
+  background: #323232; }
+
+.block__content blockquote {
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  font-style: italic; }
+  .block__content blockquote .cite {
+    margin-top: -15px;
+    text-align: right; }
+.block__content > p {
+  font-size: 1.2rem; }
+
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }
   .post h1:first-child, .post h2:first-child, .post h3:first-child, .post h4:first-child, .post h5:first-child, .post h6:first-child {
