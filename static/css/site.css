@@ -46,6 +46,9 @@ ul, ol, dl, p {
   margin: 0;
   padding: 0; }
 
+ul {
+  list-style: none; }
+
 /* Misc */
 hgroup,
 dd,
@@ -202,7 +205,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 660px;
   text-align: center; }
   .gallery ul {
-    list-style: none;
     margin-bottom: 10px; }
   .gallery li {
     display: inline-block;
@@ -221,6 +223,30 @@ h1, h2, h3, h4, h5, h6 {
   .gallery p {
     font-size: 0.8rem;
     font-style: italic; }
+
+.contact ul {
+  text-align: center; }
+.contact li {
+  display: inline-block;
+  margin: 0 10px; }
+.contact img {
+  padding: 5px 0;
+  height: 35px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px; }
+.contact .mail img {
+  width: 95px; }
+.contact .mail a:hover img {
+  border-color: #ca464b; }
+.contact .twitter img {
+  width: 113px; }
+.contact .twitter a:hover img {
+  border-color: #53aac8; }
+.contact .facebook img {
+  width: 139px; }
+.contact .facebook a:hover img {
+  border-color: #3d5abc; }
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }

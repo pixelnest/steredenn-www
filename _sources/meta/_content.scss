@@ -41,7 +41,7 @@
   width: 660px;
   text-align: center;
 
-  ul { list-style: none; margin-bottom: 10px; }
+  ul { margin-bottom: 10px; }
   li { display: inline-block; padding: 0 10px; }
 
   img {
@@ -65,4 +65,38 @@
     font-size: 0.8rem;
     font-style: italic;
   }
+}
+
+// -------------------------------------------------------
+// Contact.
+// -------------------------------------------------------
+
+.contact {
+  ul {
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+
+    a {
+
+    }
+  }
+
+  img {
+    padding: 5px 0;
+    height: 35px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px;
+  }
+
+  .mail img { width: 95px; }
+  .mail a:hover img { border-color: lighten(#c0373c, 5%); }
+  .twitter img { width: 113px; }
+  .twitter a:hover img { border-color: lighten(#40a0c2, 5%); }
+  .facebook img { width: 139px; }
+  .facebook a:hover img { border-color: lighten(#2a3e82, 15%); }
 }
