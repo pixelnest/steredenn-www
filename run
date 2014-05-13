@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Baseurl hack for Github Pages project page.
+jekyll serve --baseurl '' --watch &
+scss _sources/site.scss:static/css/site.css -w
