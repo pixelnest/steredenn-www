@@ -1,0 +1,26 @@
+name: Pixelnest Studio
+
+# -------------------------------------------------------
+# Configuration.
+# -------------------------------------------------------
+
+# Github-pages project page hack.
+baseurl: /supermassive
+
+exclude: ['_sources', '_raws', '.gitignore', '_config.yml']
+
+show_drafts: nil
+
+permalink: /:categories/:year/:month/:title
+
+paginate_path: 'journal/:num'
+paginate: 4
+
+# -------------------------------------------------------
+# Markdown.
+# -------------------------------------------------------
+
+markdown: redcarpet
+
+redcarpet:
+  extensions: ["tables", "footnotes"]
