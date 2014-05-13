@@ -1,12 +1,9 @@
 @charset "utf-8";
 
 // -------------------------------------------------------
-// Imports.
+// Utils
 // -------------------------------------------------------
 
-@import "components/reset";
-@import "components/globals";
-
-@import "meta/utils";
-@import "meta/base";
-@import "meta/app";
+.align-center {
+  text-align: center;
+}

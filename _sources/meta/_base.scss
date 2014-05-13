@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+// -------------------------------------------------------
+// Typography and vertical rythm.
+// -------------------------------------------------------
+
+html {
+  color: $text-color;
+  font-size: 1em;
+  font-family: 'Cardo', serif;
+  line-height: 1.4;
+}
+
+// Add the line-height as a the default spacing
+h1, h2, h3, h4, h5, h6,hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr {
+  margin-bottom: 1.4rem;
+}
+
+// -------------------------------------------------------
+// Page
+// -------------------------------------------------------
+
+body {
+  background-color: $background-color;
+}
+
+// -------------------------------------------------------
+// Links
+// -------------------------------------------------------
+
+.page-content a {
+  @extend %link;
+}
+
+// -------------------------------------------------------
+// Selections
+// -------------------------------------------------------
+
+// Change the selection to white on green
+::-moz-selection {
+  background: $brand-color;
+  color: white;
+}
+
+// Change the selection to white on green
+::selection {
+  background: $brand-color;
+  color: white;
+}
+
+// -------------------------------------------------------
+// Links.
+// -------------------------------------------------------
+
+%link {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover  { text-decoration: underline; color: $brand-color-dark; }
+  &:active { color: $brand-color-light; }
+  &:focus  { color: $brand-color-light; }
+}

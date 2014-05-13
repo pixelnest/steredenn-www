@@ -55,3 +55,40 @@ fieldset,
 hr {
   margin: 0;
   padding: 0; }
+
+.align-center {
+  text-align: center; }
+
+html {
+  color: white;
+  font-size: 1em;
+  font-family: 'Cardo', serif;
+  line-height: 1.4; }
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr {
+  margin-bottom: 1.4rem; }
+
+body {
+  background-color: #232323; }
+
+::-moz-selection {
+  background: #eb9a00;
+  color: white; }
+
+::selection {
+  background: #eb9a00;
+  color: white; }
+
+.page-content a {
+  color: #eb9a00;
+  text-decoration: none; }
+  .page-content a:hover {
+    text-decoration: underline;
+    color: #ae7303; }
+  .page-content a:active {
+    color: #f7b433; }
+  .page-content a:focus {
+    color: #f7b433; }
