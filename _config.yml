@@ -7,7 +7,7 @@ name: Pixelnest Studio
 # Github-pages project page hack.
 baseurl: /supermassive
 
-exclude: ['_sources', '_raws', '.gitignore', '_config.yml']
+exclude: ['_sources', '_raws', '.gitignore', '_config.yml', 'run', 'README.md']
 
 show_drafts: nil
 
