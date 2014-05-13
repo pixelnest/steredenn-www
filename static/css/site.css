@@ -194,7 +194,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -15px;
     text-align: right; }
 .block__content > p {
-  font-size: 1.2rem; }
+  font-size: 1rem;
+  font-family: Verdana, sans-serif; }
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }
