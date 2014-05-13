@@ -119,6 +119,11 @@ h1, h2, h3, h4, h5, h6 {
 .page-content h6 {
   font-size: 1.1rem; }
 
+.header__title {
+  text-align: center; }
+  .header__title img {
+    max-width: 800px; }
+
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }
   .post h1:first-child, .post h2:first-child, .post h3:first-child, .post h4:first-child, .post h5:first-child, .post h6:first-child {
