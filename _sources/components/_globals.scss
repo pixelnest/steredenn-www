@@ -1,10 +1,12 @@
 @charset "utf-8";
 
 // -------------------------------------------------------
-// Imports.
+// Variables.
 // -------------------------------------------------------
 
-@import "components/reset";
-@import "components/globals";
+$brand-color: #d4281b;
+$brand-color-light: #000;
+$brand-color-dark: #000;
 
-@import "meta/app";
+$text-color: white;
+$background-color: #232323;

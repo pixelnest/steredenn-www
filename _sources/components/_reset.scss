@@ -1,6 +1,8 @@
+@charset "utf-8";
 /*
  * Reset some styles.
  */
+
 /*html,body,div,span,applet,object,iframe,
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,acronym,address,big,cite,code,
@@ -21,6 +23,7 @@ time,mark,audio,video {
     font: inherit;
     vertical-align: baseline;
 }*/
+
 /*
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
@@ -29,21 +32,25 @@ pre,table,fieldset,hr{
   margin: 0;
 }
 */
+
 /* Container */
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Title */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 /* List + paragraph */
 ul, ol, dl, p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Misc */
 hgroup,
@@ -54,4 +61,5 @@ table,
 fieldset,
 hr {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
