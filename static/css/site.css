@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .block {
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 30px;
   width: 600px;
   background: #323232; }
@@ -194,6 +195,32 @@ h1, h2, h3, h4, h5, h6 {
   .block__content blockquote .cite {
     margin-top: -15px;
     text-align: right; }
+
+.gallery {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 660px;
+  text-align: center; }
+  .gallery ul {
+    list-style: none;
+    margin-bottom: 10px; }
+  .gallery li {
+    display: inline-block;
+    padding: 0 10px; }
+  .gallery img {
+    display: block;
+    width: 180px;
+    height: auto;
+    border: 1px solid #323232;
+    box-shadow: 0 0 2px white;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in; }
+    .gallery img:hover {
+      box-shadow: 0 0 5px 1px white; }
+  .gallery p {
+    font-size: 0.8rem;
+    font-style: italic; }
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }

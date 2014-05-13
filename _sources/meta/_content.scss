@@ -6,6 +6,7 @@
 
 .block {
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 30px;
   width: 600px;
   background: #323232;
@@ -27,5 +28,41 @@
       margin-top: -15px;
       text-align: right;
     }
+  }
+}
+
+// -------------------------------------------------------
+// Images
+// -------------------------------------------------------
+
+.gallery {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 660px;
+  text-align: center;
+
+  ul { list-style: none; margin-bottom: 10px; }
+  li { display: inline-block; padding: 0 10px; }
+
+  img {
+    display: block;
+
+    width: 180px;
+    height: auto;
+    border: 1px solid #323232;
+    box-shadow: 0 0 2px white;
+
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+
+    &:hover {
+      box-shadow: 0 0 5px 1px white;
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-style: italic;
   }
 }
