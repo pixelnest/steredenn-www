@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// -------------------------------------------------------
+// Footer.
+// -------------------------------------------------------
+
+.page-footer {
+  padding-top: 200px;
+  font-family: $font-pixel;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.footer__contact {
+  li {
+    display: inline-block;
+  }
+}
+
+// Temporary
+.footer__contact .soon {
+  color: #999;
+  sup { font-size: 0.6rem; }
+}

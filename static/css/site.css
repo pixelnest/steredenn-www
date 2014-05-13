@@ -158,6 +158,28 @@ h1, h2, h3, h4, h5, h6 {
         color: #f7b433;
         text-shadow: #f7b433 0 0 8px; }
 
+.page-footer {
+  padding-top: 200px;
+  font-family: Volter, sans-serif;
+  text-align: center; }
+  .page-footer a {
+    color: white;
+    text-decoration: none; }
+    .page-footer a:hover {
+      text-decoration: underline; }
+
+.footer__copyright {
+  margin: 0;
+  font-size: 0.8rem; }
+
+.footer__contact li {
+  display: inline-block; }
+
+.footer__contact .soon {
+  color: #999; }
+  .footer__contact .soon sup {
+    font-size: 0.6rem; }
+
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }
   .post h1:first-child, .post h2:first-child, .post h3:first-child, .post h4:first-child, .post h5:first-child, .post h6:first-child {
