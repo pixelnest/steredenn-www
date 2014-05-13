@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Reset some styles.
  */
@@ -62,7 +63,7 @@ hr {
 html {
   color: white;
   font-size: 100%;
-  font-family: 'Cardo', serif;
+  font-family: Cardo, serif;
   font-weight: 400;
   line-height: 1.4; }
 
@@ -94,7 +95,7 @@ body {
   .page-content a:focus {
     color: #f7b433; }
 
-.page {
+.page-content {
   padding: 40px; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,10 +120,43 @@ h1, h2, h3, h4, h5, h6 {
 .page-content h6 {
   font-size: 1.1rem; }
 
+.page-header {
+  padding-top: 30px;
+  font-family: Volter, sans-serif; }
+
 .header__title {
+  margin-bottom: 50px;
   text-align: center; }
   .header__title img {
     max-width: 800px; }
+
+.header__tagline {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  text-align: center; }
+  .header__tagline:before {
+    content: "“"; }
+  .header__tagline:after {
+    content: "”"; }
+  .header__tagline strong {
+    font-size: 1.6rem; }
+
+.header__nav {
+  background: black;
+  box-shadow: 0 0 2px 3px #303030 inset;
+  font-size: 1.2rem;
+  text-align: center; }
+  .header__nav ul {
+    padding: 20px; }
+  .header__nav li {
+    display: inline-block;
+    padding: 0 20px; }
+    .header__nav li a {
+      color: #eb9a00;
+      text-decoration: none; }
+      .header__nav li a:hover {
+        color: #f7b433;
+        text-shadow: #f7b433 0 0 8px; }
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }
