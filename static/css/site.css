@@ -61,8 +61,9 @@ hr {
 
 html {
   color: white;
-  font-size: 1em;
+  font-size: 100%;
   font-family: 'Cardo', serif;
+  font-weight: 400;
   line-height: 1.4; }
 
 h1, h2, h3, h4, h5, h6, hgroup,
@@ -92,3 +93,10 @@ body {
     color: #f7b433; }
   .page-content a:focus {
     color: #f7b433; }
+
+.page {
+  padding: 40px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Volter, sans-serif;
+  font-weight: 400; }
