@@ -101,28 +101,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Volter, sans-serif;
   font-weight: 400; }
 
-h1, h2 {
+.page-content h1, .page-content h2 {
   border-bottom: 2px dotted; }
-
-h1 {
+.page-content h1 {
   color: #f7b433;
   font-size: 2rem; }
-
-h2 {
+.page-content h2 {
   font-size: 1.8rem; }
-
-h3 {
+.page-content h3 {
   font-size: 1.6rem; }
-
-h4 {
+.page-content h4 {
   font-size: 1.4rem; }
-  h4:before {
+  .page-content h4:before {
     content: ">> "; }
-
-h5 {
+.page-content h5 {
   font-size: 1.2rem; }
-
-h6 {
+.page-content h6 {
   font-size: 1.1rem; }
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {

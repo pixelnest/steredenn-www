@@ -17,25 +17,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h1, h2 {
-  border-bottom: 2px dotted;
-}
+.page-content {
 
-h1, {
-  color: $brand-color-light;
-  font-size: 2rem;
-}
-
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.6rem; }
-
-h4 {
-  font-size: 1.4rem;
-
-  &:before {
-    content: ">> ";
+  h1, h2 {
+    border-bottom: 2px dotted;
   }
-}
 
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1.1rem; }
+  h1, {
+    color: $brand-color-light;
+    font-size: 2rem;
+  }
+
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.6rem; }
+
+  h4 {
+    font-size: 1.4rem;
+
+    &:before {
+      content: ">> ";
+    }
+  }
+
+  h5 { font-size: 1.2rem; }
+  h6 { font-size: 1.1rem; }
+}
