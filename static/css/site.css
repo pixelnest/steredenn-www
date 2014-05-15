@@ -229,24 +229,33 @@ h1, h2, h3, h4, h5, h6 {
 .contact li {
   display: inline-block;
   margin: 0 10px; }
-.contact img {
+
+.social-link img {
   padding: 5px 0;
   height: 35px;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   border-radius: 4px; }
-.contact .mail img {
+
+.social-link--mail img {
   width: 95px; }
-.contact .mail a:hover img {
+.social-link--mail:hover img {
   border-color: #ca464b; }
-.contact .twitter img {
+
+.social-link--twitter img {
   width: 113px; }
-.contact .twitter a:hover img {
+.social-link--twitter:hover img {
   border-color: #53aac8; }
-.contact .facebook img {
+
+.social-link--facebook img {
   width: 139px; }
-.contact .facebook a:hover img {
+.social-link--facebook:hover img {
   border-color: #3d5abc; }
+
+.social-link--tumblr img {
+  width: 103px; }
+.social-link--tumblr:hover img {
+  border-color: #466781; }
 
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   padding-top: 2rem; }

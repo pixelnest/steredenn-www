@@ -79,12 +79,14 @@
   li {
     display: inline-block;
     margin: 0 10px;
-
-    a {
-
-    }
   }
+}
 
+// -------------------------------------------------------
+// Social links.
+// -------------------------------------------------------
+
+.social-link {
   img {
     padding: 5px 0;
     height: 35px;
@@ -92,11 +94,44 @@
     border-bottom: 2px solid transparent;
     border-radius: 4px;
   }
+}
 
-  .mail img { width: 95px; }
-  .mail a:hover img { border-color: lighten(#c0373c, 5%); }
-  .twitter img { width: 113px; }
-  .twitter a:hover img { border-color: lighten(#40a0c2, 5%); }
-  .facebook img { width: 139px; }
-  .facebook a:hover img { border-color: lighten(#2a3e82, 15%); }
+.social-link--mail {
+  img {
+    width: 95px;
+  }
+
+  &:hover img {
+    border-color: lighten(#c0373c, 5%);
+  }
+}
+
+.social-link--twitter {
+  img {
+    width: 113px;
+  }
+
+  &:hover img {
+    border-color: lighten(#40a0c2, 5%);
+  }
+}
+
+.social-link--facebook {
+  img {
+    width: 139px;
+  }
+
+  &:hover img {
+    border-color: lighten(#2a3e82, 15%);
+  }
+}
+
+.social-link--tumblr {
+  img {
+    width: 103px;
+  }
+
+  &:hover img {
+    border-color: lighten(#3D5A70, 5%);
+  }
 }
