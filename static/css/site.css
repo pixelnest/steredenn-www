@@ -178,11 +178,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer__contact li {
   display: inline-block; }
 
-.footer__contact .soon {
-  color: #999; }
-  .footer__contact .soon sup {
-    font-size: 0.6rem; }
-
 .block {
   margin: 0 auto;
   margin-bottom: 40px;
