@@ -4,7 +4,7 @@ name: Supermassive
 # Configuration.
 # -------------------------------------------------------
 
-exclude: ['.gitignore', '_config.yml', 'run', 'README.md']
+exclude: ['.gitignore', 'README.md']
 permalink: /:categories/:year/:month/:title
 
 # -------------------------------------------------------
