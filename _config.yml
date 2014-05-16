@@ -21,3 +21,10 @@ markdown: redcarpet
 
 redcarpet:
   extensions: ["footnotes"]
+
+# -------------------------------------------------------
+# Sass
+# -------------------------------------------------------
+
+sass:
+  style: :compressed
