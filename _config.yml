@@ -20,4 +20,4 @@ paginate: 4
 markdown: redcarpet
 
 redcarpet:
-  extensions: ["tables", "footnotes"]
+  extensions: ["footnotes"]
