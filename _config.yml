@@ -4,9 +4,6 @@ name: Supermassive
 # Configuration.
 # -------------------------------------------------------
 
-# Github-pages project page hack.
-baseurl: /supermassive
-
 exclude: ['_sources', '_raws', '.gitignore', '_config.yml', 'run', 'README.md']
 
 show_drafts: nil
