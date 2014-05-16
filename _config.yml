@@ -4,14 +4,8 @@ name: Supermassive
 # Configuration.
 # -------------------------------------------------------
 
-exclude: ['_sources', '_raws', '.gitignore', '_config.yml', 'run', 'README.md']
-
-show_drafts: nil
-
+exclude: ['.gitignore', '_config.yml', 'run', 'README.md']
 permalink: /:categories/:year/:month/:title
-
-paginate_path: 'journal/:num'
-paginate: 4
 
 # -------------------------------------------------------
 # Markdown.
