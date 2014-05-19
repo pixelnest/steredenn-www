@@ -8,8 +8,9 @@
 
 @import "components/reset";
 @import "components/globals";
+@import "components/mixins";
+@import "components/utils";
 
-@import "meta/utils";
 @import "meta/base";
 @import "meta/app";
 @import "meta/header";

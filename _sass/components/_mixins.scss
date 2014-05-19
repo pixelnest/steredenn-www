@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// ---------------------------------------------------------
+// @mixin box-sizing(content-box | padding-box | border-box)
+//
+// Example:
+//
+//   @include box-sizing(border-box);
+// ---------------------------------------------------------
+
+@mixin box-sizing($bs) {
+  $bs: unquote($bs);
+
+  -webkit-box-sizing: $bs;
+  -moz-box-sizing: $bs;
+  box-sizing: $bs;
+}
+
+// -------------------------------------------------------
+// @mixin placeholder { ... }
+//
+// Example:
+//
+//   @include placeholder {
+//     // rules…
+//   }
+// -------------------------------------------------------
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &::-moz-placeholder          { @content }
+  &:-ms-input-placeholder      { @content }
+  &:-moz-placeholder           { @content }
+}
+
+// -------------------------------------------------------
+// @mixin transition(property, duration, method: ease)
+//
+// Example:
+//
+//   @include transition(all, 0.3s);
+// -------------------------------------------------------
+
+@mixin transition($prop, $time, $method: ease) {
+  -webkit-transition: $prop $time $method;
+  -moz-transition:    $prop $time $method;
+  -ms-transition:     $prop $time $method;
+  -o-transition:      $prop $time $method;
+  transition:         $prop $time $method;
+}
+
+// -------------------------------------------------------
+// @mixin user-select($value)
+//
+// Example:
+//
+//   @include user-select(none);
+// -------------------------------------------------------
+
+@mixin user-select($value) {
+  -webkit-touch-callout: $value;
+  -webkit-user-select:   $value;
+  -khtml-user-select:    $value;
+  -moz-user-select:      $value;
+  -ms-user-select:       $value;
+  user-select:           $value;
+}
