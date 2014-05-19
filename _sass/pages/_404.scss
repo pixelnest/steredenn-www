@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// -------------------------------------------------------
+// 404.
+// -------------------------------------------------------
+
+.not-found {
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+
+  img {
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  p:last-child {
+    padding-top: 30px;
+    color: #8d8d8d;
+    font-family: $font-pixel;
+    font-size: 0.9rem;
+  }
+}
