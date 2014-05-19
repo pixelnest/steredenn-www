@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 // -------------------------------------------------------
-// 404.
+// Error (404, 500, etc.).
 // -------------------------------------------------------
 
-.not-found {
+.page-error {
   margin: 0 auto;
   max-width: 300px;
   text-align: center;
@@ -14,7 +14,7 @@
     margin-bottom: 50px;
   }
 
-  p:last-child {
+  .page-error__code {
     padding-top: 30px;
     color: #8d8d8d;
     font-family: $font-pixel;
