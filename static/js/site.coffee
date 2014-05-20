@@ -29,6 +29,13 @@ $ ->
   # Stars background.
   # -------------------------------------------------------
 
+  if (document.getCSSCanvasContext)
+    doBigBang()
+
+# Public: Create a CSS canvas that pops stars out of nowhere.
+# Returns nothing.
+doBigBang = ->
+
   DENSITY_TABLE = {
     5:  1000
     15: 2500
@@ -66,8 +73,8 @@ $ ->
   context = document.getCSSCanvasContext('2d', 'animation', width, height)
 
   # Draw!
-  for i in [0..width] by 1
-    for j in [0..height] by 1
+  for i in [0..width]
+    for j in [0..height]
 
       # Have the right to create a star?
       if canCreateStar()
