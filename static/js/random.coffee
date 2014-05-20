@@ -90,3 +90,12 @@ roll = (table) ->
   # and look for the result.
   x = random(sumOfWeights)
   return lookupValue(table, x)
+
+# -------------------------------------------------------
+# Exports.
+# -------------------------------------------------------
+
+window.exports or= {}
+exports.randomBetween = randomBetween
+exports.random = random
+exports.roll = roll
