@@ -4,7 +4,16 @@
 // Content.
 // -------------------------------------------------------
 
-$width: 600px;
+.page-content {
+  padding: 40px;
+}
+
+@media only screen and (max-width: $phone-portrait-viewport) {
+  .page-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 // -------------------------------------------------------
 // Block.
@@ -19,16 +28,40 @@ $width: 600px;
 }
 
 .block__title {
-
+  border-bottom: 2px dotted;
+  color: $brand-color-light;
+  font-size: 2rem;
 }
 
 .block__content {
-
   blockquote {
     margin-bottom: 40px;
     font-family: $font-quote;
     font-size: 1.4rem;
     font-style: italic;
+  }
+}
+
+@media only screen and (max-width: $phone-landscape-viewport) {
+  .block {
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+
+  .block__title {
+    font-size: 1.6rem;
+  }
+
+  .block__content {
+    blockquote {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $phone-portrait-viewport) {
+  .block__title {
+    font-size: 1.4rem;
   }
 }
 
@@ -68,6 +101,25 @@ $width: 600px;
   p {
     font-size: 0.8rem;
     font-style: italic;
+  }
+}
+
+@media only screen and (max-width: $phone-landscape-viewport) {
+  .gallery {
+    width: 100%;
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      display: block !important;
+
+      img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
