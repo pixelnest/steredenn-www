@@ -126,6 +126,12 @@
   }
 }
 
+@media only screen and (max-width: $phone-landscape-viewport) {
+  .gallery__info {
+    padding: 0 20px;
+  }
+}
+
 // Gallery images
 
 .mfp-with-zoom .mfp-container,
