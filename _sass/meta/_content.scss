@@ -77,8 +77,11 @@
 
   // Disable selection.
   @include user-select(none);
+}
 
-  ul { margin-bottom: 10px; }
+.gallery__list {
+  margin-bottom: 10px;
+
   li { display: inline-block; padding: 0 10px; }
 
   img {
@@ -97,20 +100,20 @@
       box-shadow: 0 0 5px 1px white;
     }
   }
+}
 
-  p {
-    font-size: 0.8rem;
-    font-style: italic;
-  }
+.gallery__info {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 @media only screen and (max-width: $phone-landscape-viewport) {
   .gallery {
     width: 100%;
+  }
 
-    ul {
-      margin-bottom: 0;
-    }
+  .gallery__list {
+    margin-bottom: 0;
 
     li {
       display: block !important;
