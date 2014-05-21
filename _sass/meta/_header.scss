@@ -21,6 +21,15 @@
   }
 }
 
+.header__title--large {
+  display: inline;
+}
+
+.header__title--small {
+  display: none;
+}
+
+
 .header__anim {
   position: absolute;
   right: 0; bottom: 20px;
@@ -86,6 +95,14 @@
     img {
       max-width: 100%;
     }
+  }
+
+  .header__title--large {
+    display: none;
+  }
+
+  .header__title--small {
+    display: inline;
   }
 
   .header__anim {
