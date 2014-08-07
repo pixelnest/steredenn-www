@@ -159,6 +159,46 @@
 }
 
 // -------------------------------------------------------
+// Platforms.
+// -------------------------------------------------------
+
+.platforms {
+  display: table;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+
+  .image__ios {
+    opacity: 0.5;
+    width: 235px;
+    height: 70px;
+  }
+
+  .image__lemmi {
+    width: 246px;
+    height: 167px;
+  }
+}
+
+.platforms__stores {
+  display: table-cell;
+  width: 350px;
+  vertical-align: middle;
+}
+
+.platforms__android {
+  width: 150px;
+  margin: 0 auto;
+  color: #acacac;
+  font-size: 0.8rem;
+}
+
+.platforms__lemmi {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// -------------------------------------------------------
 // Contact.
 // -------------------------------------------------------
 
