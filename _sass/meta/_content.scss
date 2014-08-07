@@ -217,6 +217,16 @@
   }
 }
 
+.social-link--presskit {
+  img {
+    width: 191px / 2;
+  }
+
+  &:hover img {
+    border-color: lighten(#A964B3, 5%);
+  }
+}
+
 .social-link--tumblr {
   img {
     width: 103px;
