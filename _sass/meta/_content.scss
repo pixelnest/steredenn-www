@@ -114,6 +114,14 @@
     width: 100%;
   }
 
+  .gallery__info {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: $phone-portrait-viewport) {
+
+  // Convert the preview into a single list.
   .gallery__list {
     li {
       display: block !important;
@@ -125,10 +133,6 @@
         width: 200px;
       }
     }
-  }
-
-  .gallery__info {
-    padding: 0 20px;
   }
 }
 
