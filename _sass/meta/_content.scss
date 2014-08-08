@@ -300,3 +300,80 @@
     border-color: lighten(#F0880A, 5%);
   }
 }
+
+// -------------------------------------------------------
+// Mails.
+// -------------------------------------------------------
+
+.mailchimp {
+  padding-top: 40px;
+
+  aside {
+    margin-top: -10px;
+    color: $brand-color-light;
+    font-size: 0.9rem;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+  }
+}
+
+.mails {
+  // Dirty mailchimp form.
+
+  form {
+    display: table;
+  }
+
+  .mc-field-group {
+    display: table-cell;
+    width: 80%;
+  }
+
+  .clear {
+    padding-left: 10px;
+    display: table-cell;
+  }
+
+  .email {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+
+    background: #dddddd;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+
+    color: black;
+
+    @include box-sizing(border-box);
+    @include transition(all, 200ms, ease-in);
+
+    &:focus {
+      background: #ffffff;
+      border-color: #ffffff;
+    }
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+
+    background: none;
+    border: 3px dotted;
+
+    color: white;
+    font-family: $font-pixel;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    @include user-select(none);
+    @include transition(color, 50ms, ease-out);
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
