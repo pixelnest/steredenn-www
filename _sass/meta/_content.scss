@@ -290,3 +290,13 @@
     border-color: lighten(#3D5A70, 5%);
   }
 }
+
+.social-link--rss {
+  img {
+    width: 96px;
+  }
+
+  &:hover img {
+    border-color: lighten(#F0880A, 5%);
+  }
+}
