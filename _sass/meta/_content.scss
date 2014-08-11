@@ -27,6 +27,10 @@
   background: #323232;
 }
 
+.block__spacer {
+  padding-top: 40px;
+}
+
 .block__title {
   border-bottom: 2px dotted;
   color: $brand-color-light;
@@ -39,6 +43,12 @@
     font-family: $font-quote;
     font-size: 1.4rem;
     font-style: italic;
+  }
+
+  hr {
+    margin: 40px auto;
+    max-width: 100px;
+    border: 2px dashed white;
   }
 }
 
@@ -163,6 +173,10 @@
 // -------------------------------------------------------
 // Platforms.
 // -------------------------------------------------------
+
+.platforms-description {
+  margin-bottom: 0;
+}
 
 .platforms {
   display: table;
@@ -306,8 +320,6 @@
 // -------------------------------------------------------
 
 .mailchimp {
-  padding-top: 40px;
-
   aside {
     margin-top: -10px;
     color: $brand-color-light;
