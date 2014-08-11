@@ -76,6 +76,41 @@
 }
 
 // -------------------------------------------------------
+// Videos.
+// -------------------------------------------------------
+
+.videos {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 660px;
+  text-align: center;
+
+  iframe {
+    border: 1px solid #323232;
+    box-shadow: 0 0 2px white;
+  }
+}
+
+@media only screen and (max-width: $phone-landscape-viewport) {
+  .videos {
+    max-width: 100%;
+  }
+
+  .videos iframe {
+    // width: 560px;
+    width: 80%;
+    height: 315px;
+    // height: auto;
+  }
+}
+
+@media only screen and (max-width: $phone-portrait-viewport) {
+  .videos iframe {
+    height: 200px;
+  }
+}
+
+// -------------------------------------------------------
 // Images
 // -------------------------------------------------------
 
