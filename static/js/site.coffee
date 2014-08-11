@@ -31,6 +31,8 @@ $ ->
 
   if (document.getCSSCanvasContext)
     doBigBang()
+  else
+    doFakeBigBang()
 
 # Public: Create a CSS canvas that pops stars out of nowhere.
 # Returns nothing.
@@ -83,3 +85,8 @@ doBigBang = ->
         s = getSize()
 
         context.fillRect(i, j, s, s)
+
+# Public: Create a fake background for restricted browsers (hello, Firefox & IE!).
+# Returns nothing.
+doFakeBigBang = ->
+  $(document.body).css('background-image', 'url("/static/images/fake_background.png")');
