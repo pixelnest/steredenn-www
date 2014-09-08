@@ -11,6 +11,6 @@ jekyll build
 scp -r _site $DESTINATION:/var/www/
 
 ssh $DESTINATION 'cd /var/www/ && \
-                  rm -rf supermassive.pixelnest.io && \
-                  mv _site supermassive.pixelnest.io && \
+                  rm -rf steredenn.pixelnest.io && \
+                  mv _site steredenn.pixelnest.io && \
                   service nginx restart'
