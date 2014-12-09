@@ -10,50 +10,8 @@
 }
 
 .header__title {
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  max-width: 950px;
   text-align: center;
-
-  img {
-    max-width: 950px;
-  }
 }
-
-.header__title--large {
-  display: inline;
-}
-
-.header__title--small {
-  display: none;
-}
-
-.header__anim {
-  position: absolute;
-  right: 164px; bottom: 71px;
-  width: 104px;
-  height: auto;
-}
-
-.header__tagline {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  text-align: center;
-
-  &:before {
-    content: "“";
-  }
-
-  &:after {
-    content: "”";
-  }
-
-  strong {
-    font-size: 1.35em;
-  }
-}
-
 
 .header__nav {
   background: black;
@@ -87,49 +45,14 @@
 // -------------------------------------------------------
 
 @media only screen and (max-width: 950px) {
-  .header__title {
-    padding-left: 20px;
-    padding-right: 20px;
 
-    img {
-      max-width: 100%;
-    }
-  }
-
-  .header__title--large {
-    display: none;
-  }
-
-  .header__title--small {
-    display: inline;
-  }
-
-  .header__anim {
-    display: none;
-  }
-
-  .header__tagline {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 1.1rem;
-  }
 }
 
 @media only screen and (max-width: 700px) {
-  .header__tagline {
-    font-size: 1rem;
-  }
+
 }
 
 @media only screen and (max-width: 600px) {
-  .header__title {
-    margin-bottom: 0;
-  }
-
-  .header__tagline {
-    margin-bottom: 0;
-    font-size: 0.8rem;
-  }
 
   .header__nav {
     li {
@@ -144,7 +67,5 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .header__title {
-    margin-bottom: 30px;
-  }
+
 }
