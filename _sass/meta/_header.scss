@@ -111,12 +111,12 @@
   height: 400px;
 }
 
-@mixin slide-anim($duration) {
-  -webkit-animation: slide $duration linear infinite;
-  -moz-animation:    slide $duration linear infinite;
-  -ms-animation:     slide $duration linear infinite;
-  -o-animation:      slide $duration linear infinite;
-  animation:         slide $duration linear infinite;
+@mixin slide-anim($anim, $duration) {
+  -webkit-animation: $anim $duration linear infinite;
+  -moz-animation:    $anim $duration linear infinite;
+  -ms-animation:     $anim $duration linear infinite;
+  -o-animation:      $anim $duration linear infinite;
+  animation:         $anim $duration linear infinite;
 }
 
 .header-background__moon {
@@ -130,7 +130,7 @@
 
   // Animation.
   transform: translate3d(0,0,0);
-  @include slide-anim(60s);
+  @include slide-anim(slide, 60s);
 }
 
 .header-background__planet {
@@ -141,6 +141,65 @@
   width: 510px;
   height: 326px;
 }
+
+// Ships.
+
+.header-background__goliath {
+  position: absolute;
+  top: 50px;
+  left: 0;
+
+  width: 100%;
+
+  transform: translate3d(0, 0, 0);
+  @include slide-anim(slide-ship, 50s);
+
+  img {
+    width: 512px;
+    height: 128px;
+  }
+}
+
+.header-background__ship {
+  position: absolute;
+  top: 50px;
+  left: 0;
+
+  width: 100%;
+
+  transform: translate3d(0, 0, 0);
+
+  &.ship01 {
+    top: 40px;
+    @include slide-anim(slide-ship, 40s);
+  }
+
+  &.ship02 {
+    top: 120px;
+    @include slide-anim(slide-ship, 15s);
+  }
+
+  &.ship03 {
+    top: 230px;
+    @include slide-anim(slide-ship, 20s);
+  }
+
+  &.ship04 {
+    top: 300px;
+    @include slide-anim(slide-ship, 30s);
+  }
+
+  &.ship05 {
+    top: 320px;
+    @include slide-anim(slide-ship, 28s);
+  }
+
+  img {
+    width: 38px;
+    height: 6px;
+  }
+}
+
 
 // -------------------------------------------------------
 // Slide transition.
@@ -164,4 +223,26 @@
 @keyframes slide {
   from { @include transform( translate3d(100%, 0, 0) ); }
   to   { @include transform( translate3d(-20%, 0, 0) ); }
+}
+
+// Ships
+
+@-webkit-keyframes slide-ship {
+  from { @include transform( translate3d(-25%, 0, 0) ); }
+  to   { @include transform( translate3d(100%, 0, 0) ); }
+}
+
+@-moz-keyframes slide-ship {
+  from { @include transform( translate3d(-25%, 0, 0) ); }
+  to   { @include transform( translate3d(100%, 0, 0) ); }
+}
+
+@-o-keyframes slide-ship {
+  from { @include transform( translate3d(-25%, 0, 0) ); }
+  to   { @include transform( translate3d(100%, 0, 0) ); }
+}
+
+@keyframes slide-ship {
+  from { @include transform( translate3d(-25%, 0, 0) ); }
+  to   { @include transform( translate3d(100%, 0, 0) ); }
 }
