@@ -130,7 +130,7 @@
 
   // Animation.
   transform: translate3d(0,0,0);
-  @include slide-anim(slide, 60s);
+  @include slide-anim(slide, 120s);
 }
 
 .header-background__planet {
