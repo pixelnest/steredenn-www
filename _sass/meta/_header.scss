@@ -5,17 +5,29 @@
 // -------------------------------------------------------
 
 .page-header {
+  position: relative;
   font-family: $font-pixel;
 }
 
 .header__banner {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .header__title {
+  position: absolute; top: 0;
+
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
+
+  width: 100%;
   text-align: center;
+}
+
+.header__title img {
+  width: 370px;
+  height: auto;
 }
 
 .header__nav {
@@ -81,7 +93,7 @@
 
 .header-background {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .header-background__clouds,
@@ -91,29 +103,65 @@
 }
 
 .header-background__clouds {
-  top: 0; left: 0;
+  top: 0; right: 0;
 
-  background-image: url("/static/images/header/clouds.png");
+  background: url("/static/images/header/clouds.png") no-repeat center center;
   background-size: cover;
-  // width: 2048px;
-  // height: 1024px;
   width: 100%;
-  height: 100%;
+  height: 400px;
+}
+
+@mixin slide-anim($duration) {
+  -webkit-animation: slide $duration linear infinite;
+  -moz-animation:    slide $duration linear infinite;
+  -ms-animation:     slide $duration linear infinite;
+  -o-animation:      slide $duration linear infinite;
+  animation:         slide $duration linear infinite;
 }
 
 .header-background__moon {
+  top: 80px; left: 0px;
 
-  background-image: url("/static/images/header/moon.png");
+  background: url("/static/images/header/moon.png") no-repeat;
   background-size: 140px;
-  width: 140px;
+
+  width: 100%;
   height: 140px;
+
+  // Animation.
+  transform: translate3d(0,0,0);
+  @include slide-anim(60s);
 }
 
 .header-background__planet {
   bottom: 0;
 
-  background-image: url("/static/images/header/planet.png");
+  background: url("/static/images/header/planet.png") no-repeat;
   background-size: 510px 326px;
   width: 510px;
   height: 326px;
+}
+
+// -------------------------------------------------------
+// Slide transition.
+// -------------------------------------------------------
+
+@-webkit-keyframes slide {
+  from { @include transform( translate3d(100%, 0, 0) ); }
+  to   { @include transform( translate3d(-20%, 0, 0) ); }
+}
+
+@-moz-keyframes slide {
+  from { @include transform( translate3d(100%, 0, 0) ); }
+  to   { @include transform( translate3d(-20%, 0, 0) ); }
+}
+
+@-o-keyframes slide {
+  from { @include transform( translate3d(100%, 0, 0) ); }
+  to   { @include transform( translate3d(-20%, 0, 0) ); }
+}
+
+@keyframes slide {
+  from { @include transform( translate3d(100%, 0, 0) ); }
+  to   { @include transform( translate3d(-20%, 0, 0) ); }
 }
