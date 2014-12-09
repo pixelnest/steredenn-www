@@ -5,11 +5,16 @@
 // -------------------------------------------------------
 
 .page-header {
-  padding-top: 30px;
   font-family: $font-pixel;
 }
 
+.header__banner {
+  position: relative;
+}
+
 .header__title {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -68,4 +73,47 @@
 
 @media only screen and (max-width: 500px) {
 
+}
+
+// -------------------------------------------------------
+// Background.
+// -------------------------------------------------------
+
+.header-background {
+  width: 100%;
+  height: 500px;
+}
+
+.header-background__clouds,
+.header-background__moon,
+.header-background__planet {
+  position: absolute;
+}
+
+.header-background__clouds {
+  top: 0; left: 0;
+
+  background-image: url("/static/images/header/clouds.png");
+  background-size: cover;
+  // width: 2048px;
+  // height: 1024px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-background__moon {
+
+  background-image: url("/static/images/header/moon.png");
+  background-size: 140px;
+  width: 140px;
+  height: 140px;
+}
+
+.header-background__planet {
+  bottom: 0;
+
+  background-image: url("/static/images/header/planet.png");
+  background-size: 510px 326px;
+  width: 510px;
+  height: 326px;
 }
