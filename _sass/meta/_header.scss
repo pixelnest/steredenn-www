@@ -312,16 +312,19 @@
 }
 
 @-moz-keyframes scale-logo {
-  from { @include transform( translate3d(0, 0, 0%) ); }
-  to   { @include transform( translate3d(0, 0, 20%) ); }
+  0%   { @include transform( scale(1, 1)       ); }
+  50%  { @include transform( scale(1.15, 1.15) ); }
+  100% { @include transform( scale(1, 1)       ); }
 }
 
 @-o-keyframes scale-logo {
-  from { @include transform( translate3d(0, 0, 0%) ); }
-  to   { @include transform( translate3d(0, 0, 20%) ); }
+  0%   { @include transform( scale(1, 1)       ); }
+  50%  { @include transform( scale(1.15, 1.15) ); }
+  100% { @include transform( scale(1, 1)       ); }
 }
 
 @keyframes scale-logo {
-  from { @include transform( translate3d(0, 0, 0%) ); }
-  to   { @include transform( translate3d(0, 0, 20%) ); }
+  0%   { @include transform( scale(1, 1)       ); }
+  50%  { @include transform( scale(1.15, 1.15) ); }
+  100% { @include transform( scale(1, 1)       ); }
 }
