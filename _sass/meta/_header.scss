@@ -32,12 +32,14 @@
 
 .header__nav {
   background: black;
-  box-shadow: 0 0 2px 3px lighten($background-color, 5%) inset;
+  border-top: 2px solid lighten($background-color, 5%);
+  border-bottom: 2px solid lighten($background-color, 5%);
 
   font-size: 1.2rem;
   text-align: center;
 
   ul {
+    margin: 0;
     padding: 20px;
   }
 
@@ -84,17 +86,62 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .header__title img {
+    width: 280px;
+  }
+}
 
+// ------------------------------------------------------------------------------------------
+
+@mixin animate($anim, $duration) {
+  -webkit-animation: $anim $duration linear infinite;
+  -moz-animation:    $anim $duration linear infinite;
+  -ms-animation:     $anim $duration linear infinite;
+  -o-animation:      $anim $duration linear infinite;
+  animation:         $anim $duration linear infinite;
 }
 
 // -------------------------------------------------------
-// Background.
+// Animations + background.
 // -------------------------------------------------------
+
+// Title.
+
+.header__title img {
+  @include animate(scale-logo, 20s);
+}
+
+// Background.
 
 .header-background {
   width: 100%;
   height: 400px;
 }
+
+// Responsive.
+
+@media only screen and (max-width: 500px) {
+  .header-background {
+    height: 320px;
+
+    .header-background__moon {
+      background-size: 100px;
+      height: 100px;
+    }
+
+    .header-background__planet {
+      background-size: 340px 216px;
+      width: 340px;
+      height: 216px;
+    }
+
+    .header-background__ship {
+      display: none;
+    }
+  }
+}
+
+// Elements.
 
 .header-background__clouds,
 .header-background__moon,
@@ -111,14 +158,6 @@
   height: 400px;
 }
 
-@mixin slide-anim($anim, $duration) {
-  -webkit-animation: $anim $duration linear infinite;
-  -moz-animation:    $anim $duration linear infinite;
-  -ms-animation:     $anim $duration linear infinite;
-  -o-animation:      $anim $duration linear infinite;
-  animation:         $anim $duration linear infinite;
-}
-
 .header-background__moon {
   top: 80px; left: 0px;
 
@@ -129,8 +168,8 @@
   height: 140px;
 
   // Animation.
-  transform: translate3d(0,0,0);
-  @include slide-anim(slide, 120s);
+  transform: translate3d(0, 0, 0);
+  @include animate(slide, 200s);
 }
 
 .header-background__planet {
@@ -152,7 +191,7 @@
   width: 100%;
 
   transform: translate3d(0, 0, 0);
-  @include slide-anim(slide-ship, 50s);
+  @include animate(slide-ship, 100s);
 
   img {
     width: 512px;
@@ -167,39 +206,56 @@
 
   width: 100%;
 
-  transform: translate3d(0, 0, 0);
-
-  &.ship01 {
-    top: 40px;
-    @include slide-anim(slide-ship, 40s);
-  }
-
-  &.ship02 {
-    top: 120px;
-    @include slide-anim(slide-ship, 15s);
-  }
-
-  &.ship03 {
-    top: 230px;
-    @include slide-anim(slide-ship, 20s);
-  }
-
-  &.ship04 {
-    top: 300px;
-    @include slide-anim(slide-ship, 30s);
-  }
-
-  &.ship05 {
-    top: 320px;
-    @include slide-anim(slide-ship, 28s);
-  }
-
   img {
     width: 38px;
     height: 6px;
   }
-}
 
+  // Animations.
+
+  transform: translate3d(0, 0, 0);
+
+  &.ship01 {
+    top: 40px;
+    @include animate(slide-ship, 80s);
+  }
+
+  &.ship02 {
+    top: 120px;
+    @include animate(slide-ship, 30s);
+  }
+
+  &.ship03 {
+    top: 230px;
+    @include animate(slide-ship, 40s);
+  }
+
+  &.ship04 {
+    top: 300px;
+    @include animate(slide-ship, 60s);
+  }
+
+  &.ship05 {
+    top: 320px;
+    @include animate(slide-ship, 56s);
+  }
+
+  // Squad.
+  &.ship06 {
+    top: 210px;
+    @include animate(slide-ship, 17.50s);
+  }
+
+  &.ship07 {
+    top: 165px;
+    @include animate(slide-ship, 18s);
+  }
+
+  &.ship08 {
+    top: 185px;
+    @include animate(slide-ship, 18.50s);
+  }
+}
 
 // -------------------------------------------------------
 // Slide transition.
@@ -245,4 +301,27 @@
 @keyframes slide-ship {
   from { @include transform( translate3d(-25%, 0, 0) ); }
   to   { @include transform( translate3d(100%, 0, 0) ); }
+}
+
+// Logo.
+
+@-webkit-keyframes scale-logo {
+  0%   { @include transform( scale(1, 1)       ); }
+  50%  { @include transform( scale(1.15, 1.15) ); }
+  100% { @include transform( scale(1, 1)       ); }
+}
+
+@-moz-keyframes scale-logo {
+  from { @include transform( translate3d(0, 0, 0%) ); }
+  to   { @include transform( translate3d(0, 0, 20%) ); }
+}
+
+@-o-keyframes scale-logo {
+  from { @include transform( translate3d(0, 0, 0%) ); }
+  to   { @include transform( translate3d(0, 0, 20%) ); }
+}
+
+@keyframes scale-logo {
+  from { @include transform( translate3d(0, 0, 0%) ); }
+  to   { @include transform( translate3d(0, 0, 20%) ); }
 }
