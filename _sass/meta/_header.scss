@@ -271,6 +271,11 @@
   to   { @include transform( translate3d(-20%, 0, 0) ); }
 }
 
+@-ms-keyframes slides {
+  from { @include transform( translate3d(100%, 0, 0) ); }
+  to   { @include transform( translate3d(-20%, 0, 0) ); }
+}
+
 @-o-keyframes slide {
   from { @include transform( translate3d(100%, 0, 0) ); }
   to   { @include transform( translate3d(-20%, 0, 0) ); }
@@ -289,6 +294,11 @@
 }
 
 @-moz-keyframes slide-ship {
+  from { @include transform( translate3d(-25%, 0, 0) ); }
+  to   { @include transform( translate3d(100%, 0, 0) ); }
+}
+
+@-ms-keyframes slide-ship {
   from { @include transform( translate3d(-25%, 0, 0) ); }
   to   { @include transform( translate3d(100%, 0, 0) ); }
 }
@@ -312,6 +322,12 @@
 }
 
 @-moz-keyframes scale-logo {
+  0%   { @include transform( scale(1, 1)       ); }
+  50%  { @include transform( scale(1.15, 1.15) ); }
+  100% { @include transform( scale(1, 1)       ); }
+}
+
+@-ms-keyframes scale-logo {
   0%   { @include transform( scale(1, 1)       ); }
   50%  { @include transform( scale(1.15, 1.15) ); }
   100% { @include transform( scale(1, 1)       ); }

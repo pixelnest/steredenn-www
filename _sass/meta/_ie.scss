@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+// -------------------------------------------------------
+// IE 0 -> 9.
+// -------------------------------------------------------
+
+.ie {
+
+  .header-background__goliath {
+    display: none;
+  }
+
+  .header-background__ship {
+    display: none;
+  }
+
+  .header-background__moon {
+    left: 70%;
+  }
+
+}
