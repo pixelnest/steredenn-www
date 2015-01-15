@@ -219,16 +219,31 @@
   width: 100%;
   text-align: center;
 
-  .image__platforms {
+  .image__lemmi {
+    width: 246px;
+    height: 167px;
+  }
+}
+
+.platforms__img {
+  img {
     opacity: 0.5;
     width: 300px;
     height: 90px;
   }
 
-  .image__lemmi {
-    width: 246px;
-    height: 167px;
+  a:hover img {
+    opacity: 1;
   }
+
+  .images__xbox {
+    opacity: 0.3;
+  }
+
+  .images__greenlight {
+    opacity: 0.7;
+  }
+
 }
 
 .platforms__stores {
