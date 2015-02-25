@@ -210,69 +210,61 @@
 // -------------------------------------------------------
 
 .platforms-description {
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 .platforms {
-  display: table;
-  padding-top: 20px;
-  width: 100%;
+  margin-bottom: 60px;
   text-align: center;
 
-  .image__lemmi {
-    width: 246px;
-    height: 167px;
+  img {
+    width: 329px;
+    height: 131px;
+    max-width: 100%;
   }
 }
 
-.platforms__img {
-  img {
-    opacity: 0.5;
-    width: 300px;
-    height: 90px;
+// -------------------------------------------------------
+// Widget.
+// -------------------------------------------------------
+
+.block__widget {
+  .block__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
   }
+
+  .block__subtitle {
+    margin-bottom: 0;
+
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  div {
+    text-align: center;
+  }
+}
+
+.preorder {
+  margin-bottom: 60px;
+  font-family: $font-pixel;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
 
   a:hover img {
-    opacity: 1;
+    transform: translateY(0) scale(0.95, 0.95);
   }
 
-  .images__xbox {
-    opacity: 0.3;
-  }
+  img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
 
-  .images__greenlight {
-    opacity: 0.7;
-  }
-
-}
-
-.platforms__stores {
-  display: table-cell;
-  width: 350px;
-  vertical-align: middle;
-}
-
-.platforms__desc {
-  width: 250px;
-  margin: 0 auto;
-  color: #acacac;
-  font-size: 1rem;
-}
-
-.platforms__lemmi {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-@media only screen and (max-width: $phone-landscape-viewport) {
-  .platforms, .platforms__stores, .platforms__lemmi { display: block; width: 100%; }
-
-  .platforms {
-    padding-top: 50px;
-  }
-
-  .platforms__lemmi {
-    padding-top: 30px;
+    transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transform: translateY(0) scale(1, 1);
   }
 }
 

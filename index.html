@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<div class="preorder" id="preorder">
+  <a href="#humble-widget"><img src="/static/images/preorder.png" /></a>
+  <p>(Beta access when available)</p>
+</div>
+
 <div class="videos" id="teaser">
   <div class="video">
     <iframe width="640" height="360" src="//www.youtube.com/embed/LMAmQLODcTg?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -48,27 +53,24 @@ layout: default
     <hr />
 
     <p class="platforms-description">
-      The game will be available on <strong>Xbox One</strong>. Help us <a href="http://steredenn-greenlight.pixelnest.io/">getting the game greenlit on Steam</a> too! :)<br /><br />It will be unleashed when it's done.
+      The game will first be available on <strong>Xbox One</strong>, and then on <strong>Steam (PC/Mac/Linux)</strong>. Soon.
     </p>
 
-    <div class="platforms">
-      <div class="platforms__stores">
+    <p class="platforms">
+      <img src="/static/images/platforms-icon.png" />
+    </p>
+  </div>
 
-        <div class="platforms__img">
-          <img src="/static/images/platforms.png" class="images__xbox" />
-        </div>
+  <div class="block__widget" id="humble-widget">
+    <h1 class="block__title">
+      Pre-order Steredenn for Steam now!
+    </h1>
 
-        <div class="platforms__img">
-          <a href="http://steredenn-greenlight.pixelnest.io/"><img src="/static/images/greenlight.png" class="images__greenlight" /></a>
-        </div>
-        <div class="platforms__desc">
-          <a href="steam://url/CommunityFilePage/375439529">(or open in the Steam app)</a>
-        </div>
-      </div>
-      <div class="platforms__lemmi">
-        <img src="/static/images/packaging.png" class="image__lemmi" />
-      </div>
+    <div>
+      {% include humble-widget.html %}
     </div>
+
+    <h3 class="block__subtitle">(PC/Mac/Linux - Beta access when available)</h3>
   </div>
 </section>
 
