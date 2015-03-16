@@ -244,6 +244,11 @@
     font-size: 1.1rem;
     text-align: center;
     text-transform: uppercase;
+
+    strong {
+      color: $brand-color;
+      font-weight: normal;
+    }
   }
 
   div {
@@ -257,6 +262,11 @@
   font-size: 1.1rem;
   text-align: center;
   text-transform: uppercase;
+
+  strong {
+    color: $brand-color;
+    font-weight: normal;
+  }
 
   a:hover img {
     transform: translateY(0) scale(0.95, 0.95);
