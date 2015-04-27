@@ -232,7 +232,7 @@
 // Widget.
 // -------------------------------------------------------
 
-.block__widget {
+.block__widget, .block__soundtrack {
   .block__title {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -252,6 +252,10 @@
   div {
     text-align: center;
   }
+}
+
+.block__widget {
+  margin-bottom: 60px;
 }
 
 .preorder {
