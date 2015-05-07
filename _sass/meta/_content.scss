@@ -103,6 +103,22 @@
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .block__definition {
+    display: block;
+
+    aside, div {
+      display: block;
+      width: auto;
+    }
+
+    aside {
+      margin-bottom: auto;
+      text-align: center;
+    }
+  }
+}
+
 // Special cases.
 
 .platforms div {
