@@ -279,11 +279,18 @@
 }
 
 // -------------------------------------------------------
-// Widget.
+// Buttons.
 // -------------------------------------------------------
 
 .preorder {
   margin-bottom: 40px;
+}
+
+.early-access {
+  margin-bottom: 10px;
+}
+
+.big-button {
   text-align: center;
 
   a:hover img {
