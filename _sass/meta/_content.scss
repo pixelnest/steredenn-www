@@ -97,6 +97,16 @@
   p {
     margin-bottom: 10px;
   }
+
+  strong {
+    font-family: $font-pixel;
+    text-transform: uppercase;
+
+    sup {
+      top: -0.35em;
+      font-size: 0.7rem;
+    }
+  }
 }
 
 .block__definition:last-of-type {
@@ -136,6 +146,9 @@
 // -------------------------------------------------------
 
 .mentions {
+  max-width: $phone-portrait-viewport;
+
+  margin: 0 auto;
   margin-bottom: 30px;
   font-size: 1.1rem;
   text-align: center;
