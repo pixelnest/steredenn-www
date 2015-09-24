@@ -330,8 +330,18 @@
   }
 }
 
-.humble-widget {
+.widget {
   text-align: center;
+}
+
+.widget--itch iframe {
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.widget-desc {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 // -------------------------------------------------------

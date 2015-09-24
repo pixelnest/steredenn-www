@@ -119,13 +119,17 @@ layout: default
 
     <h2 class="block__subtitle">>> Buy directly</h2>
 
-    <div class="humble-widget" id="humble-widget">
+    <div class="widget widget--itch" id="itch-widget">
+      {% include itch-widget.html %}
+    </div>
+
+    <p>Itch.io purchases will be available on October, 1st.<br /><br/></p>
+
+    <div class="widget widget--humble" id="humble-widget">
       {% include humble-widget.html %}
     </div>
 
-    <p>An Humble Bundle purchase contains a <strong>DRM-free</strong> version and a <strong>Steam key</strong>.</p>
-
-    <p>By buying the game with the Humble Bundle widget above, <strong>you help and support us tremendously</strong>. It's the best way to get the game.</p>
+    <p class="widget-desc">An Humble Bundle or Itch.io purchase contains a <strong>DRM-free</strong> version and a <strong>Steam key</strong>.</p>
   </div>
 </section>
 
