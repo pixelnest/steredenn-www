@@ -41,6 +41,12 @@
   text-transform: uppercase;
 }
 
+.block__section-title {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .block__content {
 
 }
@@ -305,11 +311,11 @@
 // Buttons.
 // -------------------------------------------------------
 
-.preorder {
+.buy-button {
   margin-bottom: 40px;
 }
 
-.early-access {
+.steam {
   margin-bottom: 10px;
 }
 
@@ -337,11 +343,6 @@
 .widget--itch iframe {
   margin-bottom: 20px;
   border: 1px solid black;
-}
-
-.widget-desc {
-  margin-top: 20px;
-  margin-bottom: 0;
 }
 
 // -------------------------------------------------------
@@ -416,22 +417,5 @@
     &:hover {
       color: $brand-color;
     }
-  }
-}
-
-// -------------------------------------------------------
-// Temp.
-// -------------------------------------------------------
-
-.availability {
-  text-align: center;
-
-  span {
-    font-size: 0.8rem;
-  }
-
-  strong {
-    font-size: 1.5rem;
-    font-family: $font-pixel;
   }
 }
