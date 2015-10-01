@@ -418,3 +418,20 @@
     }
   }
 }
+
+// -------------------------------------------------------
+// Temp.
+// -------------------------------------------------------
+
+.availability {
+  text-align: center;
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  strong {
+    font-size: 1.5rem;
+    font-family: $font-pixel;
+  }
+}
