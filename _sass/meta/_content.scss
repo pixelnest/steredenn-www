@@ -419,3 +419,10 @@
   margin-bottom: 20px;
   border: 1px solid black;
 }
+
+.widget--humble iframe {
+  @media only screen and (min-width: 595px) {
+    width: 100%;
+    height: 327px;
+  }
+}
