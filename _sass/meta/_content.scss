@@ -152,12 +152,87 @@
 // -------------------------------------------------------
 
 .mentions {
-  max-width: $phone-portrait-viewport;
+  margin-bottom: 40px;
 
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-size: 1.1rem;
-  text-align: center;
+  // Hide the independent award on desktop sizes.
+  .award.small {
+    display: none;
+  }
+
+  table {
+    margin: 0 auto;
+  }
+
+  td {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+
+    a {
+      display: block;
+      margin-top: 5px;
+      font-family: $font-pixel;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    img {
+      margin: 0 10px;
+      width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    td {
+      padding: 5px;
+
+      font-size: 1rem;
+    }
+
+    td a {
+      font-size: 0.7rem;
+    }
+
+    td img {
+      width: 250px;
+    }
+  }
+
+  @media only screen and (max-width: $phone-landscape-viewport) {
+    table {
+      display: block;
+      width: 75%;
+      text-align: center;
+    }
+
+    tr {
+      display: inline;
+    }
+
+    thead, tbody, tfoot, th, td {
+      display: inline-block;
+    }
+
+    td {
+      margin: 5px;
+    }
+
+    // Hide some elements.
+    td.award, td.small {
+      display: none;
+    }
+
+    // Reveal the independent award.
+    .award.small {
+      display: block;
+      margin-bottom: 15px;
+      text-align: center;
+
+      img {
+        width: 300px;
+      }
+    }
+  }
 }
 
 // -------------------------------------------------------
@@ -312,7 +387,7 @@
 // -------------------------------------------------------
 
 .buy-button {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .steam {
