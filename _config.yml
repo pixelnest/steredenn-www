@@ -22,3 +22,6 @@ redcarpet:
 
 sass:
   style: :compressed
+
+gems:
+  - jekyll-coffeescript
