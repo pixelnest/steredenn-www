@@ -4,6 +4,7 @@ name: Steredenn
 # Configuration.
 # -------------------------------------------------------
 
+include: ['_pages']
 exclude: ['.gitignore', 'README.md']
 permalink: /:categories/:year/:month/:title
 
