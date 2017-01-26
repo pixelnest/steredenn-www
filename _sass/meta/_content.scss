@@ -397,30 +397,44 @@
 // Buttons.
 // -------------------------------------------------------
 
-.buy-button {
-  margin-bottom: 10px;
-}
-
-.steam {
-  margin-bottom: 10px;
+.buy-buttons {
+  text-align: center;
 }
 
 .big-button {
-  text-align: center;
-
-  a:hover img {
-    transform: translateY(0) scale(0.95, 0.95);
-  }
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none !important;
 
   img {
     max-width: 100%;
-    width: 500px;
+    width: 250px;
     height: auto;
 
     transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
     transform: translateY(0) scale(1, 1);
   }
+
+  &:hover img {
+    transform: translateY(0) scale(0.95, 0.95);
+  }
 }
+
+.big-button--large {
+  img {
+    width: 500px;
+  }
+}
+
+.big-button--steam {
+  img {
+    width: 350px;
+  }
+}
+
+// -------------------------------------------------------
+// Widgets.
+// -------------------------------------------------------
 
 .widget {
   text-align: center;
