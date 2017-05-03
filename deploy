@@ -7,7 +7,7 @@ if [ -z "$DESTINATION" ]; then
   exit 0
 fi
 
-jekyll build
+bundle exec jekyll build
 scp -r _site $DESTINATION:/var/www/
 
 ssh $DESTINATION 'cd /var/www/ && \
