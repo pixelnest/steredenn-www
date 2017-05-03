@@ -43,29 +43,34 @@
 // -------------------------------------------------------
 
 .block {
+  width: 600px;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 30px;
-  width: 600px;
+
   background: #323232;
 }
 
 .block__title {
-  border-bottom: 2px dotted;
   color: $brand-color-light;
+  border-bottom: 2px dotted;
 
   font-size: 1.4rem;
+
   text-transform: uppercase;
 }
 
 .block__subtitle {
   margin-top: 40px;
+
   font-size: 1.2rem;
+
   text-transform: uppercase;
 }
 
 .block__section-title {
   margin-top: 30px;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -98,8 +103,9 @@
 
 @media only screen and (max-width: $phone-landscape-viewport) {
   .block {
-    width: 100%;
     @include box-sizing(border-box);
+
+    width: 100%;
   }
 }
 
@@ -109,28 +115,34 @@
 
 .block__definition {
   display: table;
+
   width: 100%;
   margin-bottom: 60px;
 
   aside {
     display: table-cell;
-    padding-right: 30px;
+
     width: 25%;
+    padding-right: 30px;
 
     color: $brand-color-light;
-    font-size: 1.2rem;
+
     font-family: $font-pixel;
-    text-transform: uppercase;
+    font-size: 1.2rem;
+
     text-align: right;
+    text-transform: uppercase;
   }
 
   div {
     display: table-cell;
+
     width: 75%;
     padding-bottom: 10px;
-    vertical-align: top;
 
     border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
+
+    vertical-align: top;
   }
 
   p {
@@ -139,10 +151,12 @@
 
   strong {
     font-family: $font-pixel;
+
     text-transform: uppercase;
 
     sup {
       top: -0.35em;
+
       font-size: 0.7rem;
     }
   }
@@ -156,13 +170,16 @@
   .block__definition {
     display: block;
 
-    aside, div {
+    aside,
+    div {
       display: block;
+
       width: auto;
     }
 
     aside {
       margin-bottom: auto;
+
       text-align: center;
     }
   }
@@ -174,9 +191,9 @@
   text-align: center;
 
   img {
-    width: 85%;
-    height: auto;
+    width: 95%;
     max-width: 100%;
+    height: auto;
   }
 }
 
@@ -198,20 +215,25 @@
 
   td {
     padding: 10px;
+
     font-size: 1.2rem;
+
     text-align: center;
 
     a {
       display: block;
+
       margin-top: 5px;
+
       font-family: $font-pixel;
       font-size: 0.8rem;
+
       text-transform: uppercase;
     }
 
     img {
-      margin: 0 10px;
       width: 300px;
+      margin: 0 10px;
     }
   }
 
@@ -234,7 +256,9 @@
   @media only screen and (max-width: $phone-landscape-viewport) {
     table {
       display: block;
+
       width: 75%;
+
       text-align: center;
     }
 
@@ -242,7 +266,11 @@
       display: inline;
     }
 
-    thead, tbody, tfoot, th, td {
+    thead,
+    tbody,
+    tfoot,
+    th,
+    td {
       display: inline-block;
     }
 
@@ -251,14 +279,17 @@
     }
 
     // Hide some elements.
-    td.award, td.small {
+    td.award,
+    td.small {
       display: none;
     }
 
     // Reveal the independent award.
     .award.small {
       display: block;
+
       margin-bottom: 15px;
+
       text-align: center;
 
       img {
@@ -273,9 +304,10 @@
 // -------------------------------------------------------
 
 .videos {
+  width: 660px;
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 660px;
+
   text-align: center;
 
   .video {
@@ -310,52 +342,61 @@
 // -------------------------------------------------------
 
 .gallery {
-  margin: 0 auto;
-  margin-bottom: 40px;
-  width: 660px;
-  text-align: center;
-
   // Disable selection.
   @include user-select(none);
+
+  width: 660px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  text-align: center;
 }
 
 .gallery__list {
   margin-bottom: 0;
 
-  li { display: inline-block; padding: 0 10px; }
+  li {
+    display: inline-block;
+
+    padding: 0 10px;
+  }
 
   li.subtitle {
     display: block;
+
     max-width: 100%;
     margin-top: 30px;
     margin-bottom: 20px;
 
     color: white;
-    font-size: 2rem;
+
     font-family: $font-pixel;
+    font-size: 2rem;
+
     text-transform: uppercase;
   }
 
   img {
     display: block;
 
-    margin-bottom: 20px;
-
     width: 180px;
     height: auto;
+    margin-bottom: 20px;
+
     border: 1px solid #323232;
     box-shadow: 0 0 2px white;
 
     cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
-    cursor: zoom-in;
+    cursor:    -moz-zoom-in;
+    cursor:         zoom-in;
 
     &:hover {
       box-shadow: 0 0 5px 1px white;
     }
   }
 
-  img.gif, img.wallpaper {
+  img.gif,
+  img.wallpaper {
     width: 290px;
   }
 }
@@ -376,17 +417,15 @@
 }
 
 @media only screen and (max-width: $phone-portrait-viewport) {
-
   // Convert the preview into a single list.
   .gallery__list {
     li {
       display: block !important;
 
       img {
+        width: 200px;
         margin-left: auto;
         margin-right: auto;
-
-        width: 200px;
       }
     }
   }
@@ -397,11 +436,13 @@
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0.001;
-  -webkit-backface-visibility: hidden;
+
   -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+
+  -webkit-backface-visibility: hidden;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
@@ -426,12 +467,14 @@
 
 .big-button {
   display: inline-block;
+
   margin-bottom: 10px;
+
   text-decoration: none !important;
 
   img {
-    max-width: 100%;
     width: 250px;
+    max-width: 100%;
     height: auto;
 
     transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -460,8 +503,9 @@
 // -------------------------------------------------------
 
 .widget {
-  text-align: center;
   margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .widget--itch {
@@ -470,6 +514,7 @@
 
 .widget--itch iframe {
   max-width: 100%;
+
   border: 1px solid black;
 }
 
