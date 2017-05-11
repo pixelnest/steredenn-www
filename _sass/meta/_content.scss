@@ -472,7 +472,8 @@
 
   text-decoration: none !important;
 
-  img {
+  img,
+  svg {
     width: 250px;
     max-width: 100%;
     height: auto;
@@ -481,19 +482,22 @@
     transform: translateY(0) scale(1, 1);
   }
 
-  &:hover img {
+  &:hover img,
+  &:hover svg {
     transform: translateY(0) scale(0.95, 0.95);
   }
 }
 
 .big-button--large {
-  img {
+  img,
+  svg {
     width: 500px;
   }
 }
 
-.big-button--steam {
-  img {
+.big-button--mid {
+  img,
+  svg {
     width: 350px;
   }
 }
