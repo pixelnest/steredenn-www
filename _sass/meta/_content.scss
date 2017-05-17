@@ -209,6 +209,12 @@
     display: none;
   }
 
+
+  .mobile {
+    // Same height as the first and second line.
+    height: 110px;
+  }
+
   table {
     margin: 0 auto;
   }
@@ -238,6 +244,11 @@
   }
 
   @media only screen and (max-width: 950px) {
+    .mobile {
+      // Same height as the first and second line.
+      height: 90px;
+    }
+
     td {
       padding: 5px;
 
