@@ -190,7 +190,7 @@
 .header-background__clouds {
   top: 0; right: 0;
 
-  background: url("/static/images/header/clouds.png") no-repeat center center;
+  background: url("/public/images/header/clouds.png") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 400px;
@@ -199,7 +199,7 @@
 .header-background__moon {
   top: 80px; left: 0px;
 
-  background: url("/static/images/header/moon.png") no-repeat;
+  background: url("/public/images/header/moon.png") no-repeat;
   background-size: 140px;
 
   width: 100%;
@@ -213,7 +213,7 @@
 .header-background__planet {
   bottom: 0;
 
-  background: url("/static/images/header/planet.png") no-repeat;
+  background: url("/public/images/header/planet.png") no-repeat;
   background-size: 510px 326px;
   width: 510px;
   height: 326px;
