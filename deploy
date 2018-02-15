@@ -8,9 +8,10 @@ if [ -z "$DESTINATION" ]; then
 fi
 
 bundle exec jekyll build
-scp -r _site $DESTINATION:/var/www/
+scp -r _site $DESTINATION:/var/www/steredenn.pixelnest.io/
 
-ssh $DESTINATION 'cd /var/www/ && \
-                  rm -rf steredenn.pixelnest.io && \
-                  mv _site steredenn.pixelnest.io && \
+ssh $DESTINATION 'cd /var/www/steredenn.pixelnest.io/ && \
+                  rm -rf classic && \
+                  mv _site classic && \
+                  mv classic/public/ public/ && \
                   service nginx restart'
