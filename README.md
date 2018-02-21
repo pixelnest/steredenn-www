@@ -3,7 +3,7 @@
 ## Development
 
 ```
-jekyll serve
+./run
 ```
 
 ## Deploy
