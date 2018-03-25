@@ -1,17 +1,33 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-DESTINATION=$1
+BASEDIR=$(dirname $0)
+cd $BASEDIR
 
-if [ -z "$DESTINATION" ]; then
-  echo "Error: no user@server argument. Abort..."
-  exit 0
+source .env
+
+# --------------------------------------------------------------
+# Get destination.
+# --------------------------------------------------------------
+
+if [ "$1" ]; then
+  DESTINATION=$1
+else
+  DESTINATION="$SERVER_NAME"
 fi
 
-bundle exec jekyll build
-scp -r _site $DESTINATION:/var/www/steredenn.pixelnest.io/
+if [ -z "$DESTINATION" ]; then
+  echo "Error: no destination provided (as .env variable or argument)."
+  exit 1
+fi
 
-ssh $DESTINATION 'cd /var/www/steredenn.pixelnest.io/ && \
-                  rm -rf classic && \
-                  mv _site classic && \
-                  mv classic/public/ public/ && \
-                  service nginx restart'
+# --------------------------------------------------------------
+# Deploy.
+# --------------------------------------------------------------
+
+bundle exec jekyll build
+
+rsync -vaz _site/ $DESTINATION:/var/www/steredenn-classic
+
+ssh $DESTINATION 'service nginx restart'
+
+rm -rf _site
