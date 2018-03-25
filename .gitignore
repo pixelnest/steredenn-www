@@ -1,28 +1,32 @@
-############
-## Windows
-############
+# Always-ignore.
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
 
-# Windows image file caches
+# OS/Editor.
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+.env
+*.sass-cache
+nbproject
+Desktop.ini
 Thumbs.db
 
-# Folder config file
-Desktop.ini
-
-############
-## Mac
-############
-
-# Crap
-.DS_Store
-
-############
-## Jekyll
-############
-
+# Packages.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+bower_components/
 _site
-
-############
-## Sass
-############
-
-.sass-cache/
+.next/
+out/
