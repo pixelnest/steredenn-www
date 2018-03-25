@@ -5,7 +5,7 @@ name: Steredenn
 # -------------------------------------------------------
 
 include: ['_pages']
-exclude: ['.gitignore', 'README.md']
+exclude: ['.gitignore', 'README.md', 'deploy', 'run', 'Gemfile', 'Gemfile.lock']
 permalink: /:categories/:year/:month/:title/
 
 # -------------------------------------------------------
